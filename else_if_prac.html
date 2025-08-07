@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    let temp = Number(prompt("Temperature Check"));
+
+    if (isNaN(temp)) {
+      console.log("Invalid input! Please enter a number.");
+    } else if (temp < 15) {
+      console.log("Temperature Cold..");
+    } else if (temp >= 15 && temp <= 30) {
+      console.log("Temperature Normal..");
+    } else if (temp > 30) {
+      console.log("Temperature Hot..");
+    }
+  </script>
+</body>
+</html>
