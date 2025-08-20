@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //  inheritance :- 
+
+        // class parent {
+        //     hello (){
+        //         console.log("Hello Meet Prajapati");
+        //     };
+        // };
+
+        // class child extends parent{ }
+
+        // let obj =  new child();
+
+        class person{
+            constructor(name){
+                this.speices = "homo";
+                this.name =name; 
+            }
+            eat(){
+                console.log("eat");
+            }
+            // sleep(){
+            //     console.log("sleep");
+            // }
+            // work(){
+            //     console.log("do notihng");
+            // }
+        }
+
+        class engineer extends person{
+            constructor(name){
+                super(name);
+            }
+            work(){
+                console.log("slove problems");
+            }
+        }
+
+        // let meetobj = new engineer(); 
+
+        let engObj = new engineer("Meet");
+
+    </script>
+</body>
+</html>
