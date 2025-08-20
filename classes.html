@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // class :-  
+
+        class ToyotaCar {
+            constructor(brand, color) {
+                console.log("creating new object");
+                this.brand = brand;
+                this.color = color;
+            }
+            start() {
+                console.log("Start");
+            };
+            stop() {
+                console.log("Stop");
+            };
+        };
+
+
+
+        let fortuner = new ToyotaCar("fortuner", "black");
+        // fortuner.setName("fortuner");
+        console.log(fortuner)
+        let crysta = new ToyotaCar("crysta", "white");
+        // crysta.setName("crysta");
+        console.log(crysta);
+
+    </script>
+</body>
+
+</html>

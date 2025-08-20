@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // prototype create :- 
+
+        // const student = {
+        //     fullName: "Meet Prajapati",
+        //     marks: 45,
+        //     printMarks: function () {
+        //         console.log("marks=>", this.marks); // this. means same object = student.marks 
+        //     },
+        // };
+
+        const employee = {
+            calcTax(){
+                console.log("tax rate is 10%");
+            },
+        };
+
+        const karanArjun = {
+            salary :50000,
+            calcTax(){
+                console.log("tax rate is 20%");
+            },
+        };
+
+        karanArjun.__proto__ = employee; // Another object to use as a prototype and merge and used.
+        
+    </script>
+</body>
+
+</html>
