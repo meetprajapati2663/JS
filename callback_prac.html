@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  Q.1 
+
+        //  function drive(name, callback) {
+        //     console.log(name + " Start Drive ");
+        //     setTimeout(() => {
+        //         console.log(name + " Your Driving Safe Good");
+        //         callback(name);
+        //     }, 2000);
+        // }
+
+        // function suggest(name) {
+        //     console.log(name + " Driving Speed limit Above 50")
+        // }
+
+        // function thank(name) {
+        //     console.log(name + "Thank You For This Ride");
+        // }
+
+        // drive("Meet", suggest);
+        // drive("Meet", thank);
+
+        // Q.2 
+
+        function orderFood(item, callback) {
+            console.log("Order Placed For " + item);
+            setTimeout(() => {
+                console.log("Cooking... " + item);
+                callback(item);
+            }, 2000);
+        }
+
+        function thank(item) {
+            console.log("Enjoy Your " + item);
+        }
+
+        orderFood("Panner Tufani", thank);
+    </script>
+</body>
+
+</html>
