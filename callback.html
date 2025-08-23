@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //     console.log("one");
+        //     console.log("two");
+
+        //   function hello() {
+        //     console.log("Hello Meet Prajapati");
+        //   };
+
+        //      console.log("three");
+        //      console.log("four");
+
+        //   setTimeout(hello,2000);
+
+        // function sum(a, b) {
+        //     console.log(a + b);
+        // }
+
+        // function calculator(a, b, sumCallback) {
+        //     sumCallback(a, b);
+        // }
+
+        // calculator(2, 4, sum);
+
+        // function getData(getId, getNextData) {
+        //     setTimeout(() => {
+        //         console.log("Data", getId);
+        //         if (getNextData) {
+        //             getNextData();
+        //         }
+        //     }, 2000);
+        // }
+        // getData(1, () => {
+        //     getData(2, () => {
+        //         getData(3);
+        //     });
+        // })
+
+        function drive(name, callback) {
+            console.log(name + " Start Drive ");
+            setTimeout(() => {
+                console.log(name + " Your Driving Safe Good");
+                callback(name);
+            }, 2000);
+        }
+
+        function suggest(name) {
+            console.log(name + " Driving Speed limit Above 50")
+        }
+
+        function thank(name) {
+            console.log(name + "Thank You For This Ride");
+        }
+
+        drive("Meet", suggest);
+        drive("Meet", thank);
+
+    </script>
+</body>
+
+</html>
